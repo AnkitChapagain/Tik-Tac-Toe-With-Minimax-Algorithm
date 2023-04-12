@@ -1,0 +1,60 @@
+
+/*second*/
+body{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.board{
+    margin: 150px  12px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+.cell{
+    height: 100px;
+    width: 100px;
+    border: 2px solid blue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    border-radius: 10px;
+}
+#r01,#r02,#r03{
+    border-top:none;
+}
+#r21,#r22,#r23{
+    border-bottom:none;
+}
+#r01,#r11,#r21{
+    border-left: none;
+}
+#r03,#r13,#r23{
+    border-right: none;
+}
+.reset{
+    margin-top: 250px;
+    align-content: center;
+}
+.reset button{
+    
+    font-size: 36px;
+    color: rgb(48, 65, 75);
+    background-color: rgb(12, 216, 12);;
+    margin-left: 20%;
+    border-radius: 10px;
+    font-style: italic;
+    
+}
+.inactive{
+    display:none;
+}
+.disable{
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+
+   
